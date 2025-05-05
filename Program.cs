@@ -30,7 +30,24 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/api/message", (IHttpContextAccessor httpContextAccessor) =>
 {
     string results = "Hello from C# API! The current time is " + DateTime.Now.ToString("T") + " Computer Name: " + Environment.MachineName;
+    
     string ipAddress = httpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.ToString() ?? "Unknown IP";
+    // Check if the IP address is null or empty
+    // Check if the IP address is IPv4 or IPv6 and format accordingly
+    if (httpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.AddressFamily == System.Net.Sockets.AddressFamily.InterNetworkV6)
+    {
+        ipAddress = "[" + ipAddress + "]"; // IPv6 format
+    }
+
+    else if (httpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+    {
+        ipAddress = ipAddress; // IPv4 format
+    }
+    else
+    {
+        ipAddress = "Unknown IP"; // Fallback for unknown IP address
+    }
+
     return results + " IP Address: " + ipAddress;
 });
 
