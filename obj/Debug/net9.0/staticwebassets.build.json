@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "iduB9GklUmjGTSISjqJBPUy7gkKyTTvFowqi8Bze734=",
+  "Source": "CSharpApiBackend",
+  "BasePath": "_content/CSharpApiBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
