@@ -31,3 +31,5 @@ C:\Users\sesha\CSharpApiBackend\obj\Debug\net9.0\refint\CSharpApiBackend.dll
 C:\Users\sesha\CSharpApiBackend\obj\Debug\net9.0\CSharpApiBackend.pdb
 C:\Users\sesha\CSharpApiBackend\obj\Debug\net9.0\CSharpApiBackend.genruntimeconfig.cache
 C:\Users\sesha\CSharpApiBackend\obj\Debug\net9.0\ref\CSharpApiBackend.dll
+C:\Users\sesha\CSHARPAPIBACKEND\bin\Debug\net9.0\BrowserExtention\manifest.json
+C:\Users\sesha\CSHARPAPIBACKEND\obj\Debug\net9.0\CSharpApiBackend.sourcelink.json
